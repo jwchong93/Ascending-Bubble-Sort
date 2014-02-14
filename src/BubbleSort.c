@@ -22,3 +22,11 @@ void sortLargestToRightMost(int *array,int size)
 		compareAndSwap(&array[i],&array[i+1]);
 	}
 }
+
+void bubbleSort(int *array,int size)
+{
+	for(;size >=2;size--)
+	{
+		sortLargestToRightMost(array,size);
+	}
+}

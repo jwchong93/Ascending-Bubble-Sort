@@ -57,8 +57,39 @@ void test_sortLargestToRightMost_should_move_largest_to_the_end_for_4_elements()
 {
 	int array[]={10,5,2,1};
 	sortLargestToRightMost(array,4);
-	TEST_ASSERT_EQUAL(1,array[0]);
+	TEST_ASSERT_EQUAL(5,array[0]);
 	TEST_ASSERT_EQUAL(2,array[1]);
-	TEST_ASSERT_EQUAL(5,array[2]);
+	TEST_ASSERT_EQUAL(1,array[2]);
 	TEST_ASSERT_EQUAL(10,array[3]);
+}
+
+void test_bubbleSort_should_sort_2_elements_correctly()
+{
+	int array[]={34,23};
+	bubbleSort(array,2);
+	TEST_ASSERT_EQUAL(23,array[0]);
+	TEST_ASSERT_EQUAL(34,array[1]);
+	
+}
+
+void test_bubbleSort_should_sort_3_elements_correctly()
+{
+	int array[]={33,22,11};
+	bubbleSort(array,3);
+	TEST_ASSERT_EQUAL(11,array[0]);
+	TEST_ASSERT_EQUAL(22,array[1]);
+	TEST_ASSERT_EQUAL(33,array[2]);
+	
+}
+
+void test_bubbleSort_should_sort_5_elements_correctly()
+{
+	int array[]={33,22,11,8,3};
+	bubbleSort(array,5);
+	TEST_ASSERT_EQUAL(3,array[0]);
+	TEST_ASSERT_EQUAL(8,array[1]);
+	TEST_ASSERT_EQUAL(11,array[2]);
+	TEST_ASSERT_EQUAL(22,array[3]);
+	TEST_ASSERT_EQUAL(33,array[4]);
+	
 }
