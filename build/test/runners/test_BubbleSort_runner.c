@@ -34,6 +34,8 @@ extern void test_compareAndSwap_should_not_swap_if_in_order(void);
 extern void test_compareAndSwap_should_swap_if_not_in_order(void);
 extern void test_compareAndSwap_should_not_swap_if_in_order_for_negative_numbers(void);
 extern void test_compareAndSwap_should_swap_if_not_in_order_for_negative_numbers(void);
+extern void test_sortLargestToRightMost_should_move_largest_to_the_end(void);
+extern void test_sortLargestToRightMost_should_move_largest_to_the_end_for_3_elements(void);
 
 
 //=======Test Reset Option=====
@@ -53,6 +55,8 @@ int main(void)
   RUN_TEST(test_compareAndSwap_should_swap_if_not_in_order, 15);
   RUN_TEST(test_compareAndSwap_should_not_swap_if_in_order_for_negative_numbers, 23);
   RUN_TEST(test_compareAndSwap_should_swap_if_not_in_order_for_negative_numbers, 31);
+  RUN_TEST(test_sortLargestToRightMost_should_move_largest_to_the_end, 39);
+  RUN_TEST(test_sortLargestToRightMost_should_move_largest_to_the_end_for_3_elements, 47);
 
   return (UnityEnd());
 }
