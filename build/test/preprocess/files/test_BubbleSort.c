@@ -103,3 +103,23 @@ void test_sortLargestToRightMost_should_move_largest_to_the_end_for_3_elements()
  UnityAssertEqualNumber((_U_SINT)((6)), (_U_SINT)((array[2])), (((void *)0)), (_U_UINT)53, UNITY_DISPLAY_STYLE_INT);
 
 }
+
+
+
+void test_sortLargestToRightMost_should_move_largest_to_the_end_for_4_elements()
+
+{
+
+ int array[]={10,5,2,1};
+
+ sortLargestToRightMost(array,4);
+
+ UnityAssertEqualNumber((_U_SINT)((5)), (_U_SINT)((array[0])), (((void *)0)), (_U_UINT)60, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((2)), (_U_SINT)((array[1])), (((void *)0)), (_U_UINT)61, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((1)), (_U_SINT)((array[2])), (((void *)0)), (_U_UINT)62, UNITY_DISPLAY_STYLE_INT);
+
+ UnityAssertEqualNumber((_U_SINT)((10)), (_U_SINT)((array[3])), (((void *)0)), (_U_UINT)63, UNITY_DISPLAY_STYLE_INT);
+
+}

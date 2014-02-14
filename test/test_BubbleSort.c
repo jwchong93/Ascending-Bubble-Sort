@@ -52,3 +52,13 @@ void test_sortLargestToRightMost_should_move_largest_to_the_end_for_3_elements()
 	TEST_ASSERT_EQUAL(5,array[1]);
 	TEST_ASSERT_EQUAL(6,array[2]);
 }
+
+void test_sortLargestToRightMost_should_move_largest_to_the_end_for_4_elements()
+{
+	int array[]={10,5,2,1};
+	sortLargestToRightMost(array,4);
+	TEST_ASSERT_EQUAL(1,array[0]);
+	TEST_ASSERT_EQUAL(2,array[1]);
+	TEST_ASSERT_EQUAL(5,array[2]);
+	TEST_ASSERT_EQUAL(10,array[3]);
+}
